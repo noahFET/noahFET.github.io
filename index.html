@@ -6,8 +6,9 @@
       function updateParagraphText(){
         let passwordElement = document.getElementById('passwordInput');
         let labelElement = document.getElementById('label');
+        let originalText = labelElement.textContent;
         if(passwordElement.value=='secret'){
-          labelElement.innerText = 'Congratulations Rose, you got the password correct! Your reward: <strong>a trip to Disneyland!</strong>';
+          labelElement.innerHTML = 'Congratulations Rose, you got the password correct! Your reward: <strong>a trip to Disneyland!</strong>';
         }else{
           labelElement.innerText = 'Sorry, that is incorrect';
         }
