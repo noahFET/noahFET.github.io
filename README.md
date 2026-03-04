@@ -1,2 +1,0 @@
-# noahFET.github.io
-idk
