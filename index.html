@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>The getElementById() Function</title>
+    <title>Happy Birthday Rose!</title>
     <script>
       function updateParagraphText(){
         let passwordElement = document.getElementById('passwordInput');
         let labelElement = document.getElementById('label');
         let originalText = labelElement.textContent;
-        if(passwordElement.value=='secret'){
+        if(passwordElement.value.toLowerCase()=='tung tung tung sahur'){
           labelElement.innerHTML = 'Congratulations Rose, you got the password correct! Your reward: <strong>a trip to Disneyland!</strong>';
         }else{
           labelElement.innerText = 'Sorry, that is incorrect';
