@@ -7,8 +7,8 @@
         let passwordElement = document.getElementById('passwordInput');
         let labelElement = document.getElementById('label');
         let originalText = labelElement.textContent;
-        if(passwordElement.value.toLowerCase()=='tung tung tung sahur'){
-          labelElement.innerHTML = 'Congratulations Rose, you got the password correct! Your reward: <strong>a trip to Disneyland!</strong>';
+        if(passwordElement.value.toLowerCase().replaceAll(' ','')=='tungtungtungsahur'){
+          labelElement.innerHTML = 'Congratulations Rose, you got the password correct! Your reward: <strong>a trip to Disneyland!</strong> Say "0110 0111" to Noah to redeem this reward.';
         }else{
           labelElement.innerText = 'Sorry, that is incorrect';
         }
