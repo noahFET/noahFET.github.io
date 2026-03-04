@@ -4,18 +4,24 @@
     <title>The getElementById() Function</title>
     <script>
       function updateParagraphText(){
+        let passwordElement = document.getElementById('passwordInput');
         let labelElement = document.getElementById('label');
-
-        labelElement.innerText = 'You clicked the button!';
+        if(passwordElement.value=='secret'){
+          labelElement.innerText = 'Congratulations Rose, you got the password correct! Your reward: <strong>a trip to Disneyland!</strong>';
+        }else{
+          labelElement.innerText = 'Sorry, that is incorrect';
+        }
+        
       }
     </script>
   </head>
   <body>
     <p id="label">
-      Click the button.
+      Enter the secret password
     </p>
+    <input type="password" id="passwordInput" placeholder="secret password" size="20" required>
     <button onclick="updateParagraphText();">
-      Click me!
+      Click to submit password
     </button>
   </body>
 </html>
